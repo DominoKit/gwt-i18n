@@ -80,7 +80,7 @@
         <maven.javadoc.plugin>3.2.0</maven.javadoc.plugin>
         <maven.source.plugin>3.2.1</maven.source.plugin>
         <maven.gpg.plugin>1.6</maven.gpg.plugin>
-        <gwt.cldr.version>1.0-SNAPSHOT</gwt.cldr.version>
+        <gwt.cldr.version>1.0</gwt.cldr.version>
     </properties>
 
     <repositories>
