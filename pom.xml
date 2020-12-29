@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <name>GWT i18n Parent</name>
-    <description></description>
+    <description>Temporary repository for gwt-i18n to be released as part of dominokit until original gwt-i18n is released</description>
     <url>https://github.com/vegegoku/gwt-i18n-apt</url>
     <inceptionYear>2018</inceptionYear>
     <organization>
