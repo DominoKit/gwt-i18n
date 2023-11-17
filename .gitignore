@@ -70,3 +70,4 @@ local.properties
 
 **/gwt-unitCache/**
 **/war/*
+**/pom.xml.versionsBackup

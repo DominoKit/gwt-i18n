@@ -6,7 +6,7 @@
 
     <groupId>org.dominokit.i18n</groupId>
     <artifactId>gwt-i18n-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>GWT i18n Parent</name>
@@ -66,21 +66,24 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <gwt.version>2.9.0</gwt.version>
-        <elemental.version>1.1.0</elemental.version>
+        <snapshot.version>HEAD-SNAPSHOT</snapshot.version>
+        <next.release.version>1.0.2</next.release.version>
+
+        <gwt.version>2.10.0</gwt.version>
+        <elemental.version>1.2.1</elemental.version>
         <plugin.source.version>2.4</plugin.source.version>
-        <maven.gwt.plugin>1.0.0</maven.gwt.plugin>
-        <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
+        <maven.gwt.plugin>1.1.0</maven.gwt.plugin>
+        <maven.compiler.plugin>3.11.0</maven.compiler.plugin>
         <maven.deploy.plugin>3.0.0-M1</maven.deploy.plugin>
         <maven.flatten.plugin>1.2.2</maven.flatten.plugin>
         <maven.fmt.plugin>2.9</maven.fmt.plugin>
         <maven.install.plugin>3.0.0-M1</maven.install.plugin>
         <maven.license.plugin>3.0</maven.license.plugin>
         <maven.surfire.plugin>3.0.0-M1</maven.surfire.plugin>
-        <maven.javadoc.plugin>3.2.0</maven.javadoc.plugin>
+        <maven.javadoc.plugin>3.6.2</maven.javadoc.plugin>
         <maven.source.plugin>3.2.1</maven.source.plugin>
         <maven.gpg.plugin>1.6</maven.gpg.plugin>
-        <gwt.cldr.version>1.0</gwt.cldr.version>
+        <gwt.cldr.version>1.0.1</gwt.cldr.version>
     </properties>
 
     <repositories>
@@ -117,7 +120,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.12</version>
+                <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -304,10 +307,12 @@
                 <extensions>true</extensions>
             </plugin>
             <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
+                <groupId>org.dominokit</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.14.0</version>
+                <version>1.0.0</version>
                 <configuration>
+                    <snapshotVersionProperty>snapshot.version</snapshotVersionProperty>
+                    <releaseVersionProperty>next.release.version</releaseVersionProperty>
                     <!-- Set to true to immediately bump the development version when creating a release branch -->
                     <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
 
