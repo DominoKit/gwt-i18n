@@ -6,7 +6,7 @@
 
     <groupId>org.dominokit.i18n</groupId>
     <artifactId>gwt-i18n-parent</artifactId>
-    <version>HEAD-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>GWT i18n Parent</name>
